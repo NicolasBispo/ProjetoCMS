@@ -1,0 +1,80 @@
+body{
+    padding: 20px 20px 10px 10px;
+    background-image: url("./../IMAGENS/Background-index.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.corpo-texto{
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
+}
+.postcontainer-area{
+    margin-top: 20px;
+    background-color: rgb(255, 206, 160);
+    padding: 10px 10px 10px 10px;
+}
+.postcontainer-area h1{
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+.nao-encontrado{
+    display: flex;
+}
+.nao-encontrado div{
+    margin-top: 50px;
+    font-family: 'Roboto';
+    font-weight: 900;
+    height: 200px;
+    background-color: rgb(255, 196, 0);
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+}
+.nao-encontrado button{
+    margin-top: 10px;
+    height: 50px;
+    width: fit-content;
+    border-radius: 20px;
+    border: solid 1px yellowgreen;
+}
+.nao-encontrado button:hover{
+    background-color: chocolate;
+}
+.comentarios-existentes{
+    display: flex;
+    flex-direction: column;
+    background: orange;
+    padding: 20px;
+}
+/*
+.comentario{
+    display: grid;
+    background-color: bisque;
+    grid-template-columns: 50px 1fr;
+    margin-top: 10px;
+    border: solid 1px black;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.foto_usuario img{
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 50px;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+}
+.usuario-nome{
+    padding-left: 20px;
+}
+.usuario-comentario{
+    padding-left: 20px;
+}
+*/

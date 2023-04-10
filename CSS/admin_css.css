@@ -1,0 +1,171 @@
+:root {
+    font-size: 20px;
+    font-family: 'Roboto';
+    --text-primary: #000000;
+    --text-secondary: #ececec;
+}
+
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    background-color: rgb(255, 111, 111);
+    position: fixed;
+    z-index: 1;
+    transition: width 200ms ease;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
+
+.ic-perf {
+    fill: rgb(255, 238, 0);
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(201, 66, 255);
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.animate-fade-in {
+    animation: fade-in 0.5s ease-in;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    border: solid 1px black;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.col {
+    max-width: 200px;
+    max-height: 100px;
+    overflow: hidden;
+    margin-left: 1rem;
+
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.form-edicao {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto) 1fr;
+    gap: 10px;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.linhas {
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.linha1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.linha2 {
+    height: fit-content;
+}
+
+.linhas>div>input[type=text],
+.linhas>input[type=text] {
+    width: 100%;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 1px black;
+}
+.linhas>div>input[type=text]:focus,
+.linhas>input[type=text]:focus {
+    outline: solid 1px blue;
+    
+}
+
+.linha3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 0;
+    /* permitir o crescimento do conteúdo do textarea */
+}
+
+.linha3>textarea {
+    min-width: 100%;
+    width: 100%;
+    min-height: 200px;
+    max-height: 100%;
+    resize: vertical;
+    padding: 10px;
+    border-radius: 10px;
+}

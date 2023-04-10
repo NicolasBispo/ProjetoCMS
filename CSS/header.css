@@ -1,0 +1,49 @@
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: none;
+    text-underline-position: unset;
+}
+.container-header{
+    display: grid;
+    width: 100%;
+    grid-template: 100px / 2fr 3fr;
+    align-items: center;
+    background-color: white;
+    user-select: none;
+
+}
+.container-header a{
+    text-decoration: none;
+    text-decoration-line: none;
+}
+.container-logo{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    padding: 20px 20px 20px  20px;
+}
+.container-menu{
+    display: flex;
+    align-items: center;    
+}
+.container-menu ul{
+    display: flex;
+    font-family: 'Roboto';
+    font-weight: 500;
+    align-self: center;
+}
+.container-menu ul li{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.dropdown-menu .red-item{
+    background-color: rgb(250, 98, 98);
+}
+.dropdown-menu .red-item:hover{
+    background-color: red;
+}
